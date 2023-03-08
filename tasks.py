@@ -38,9 +38,9 @@ namespace = Collection("nautobot_bgp_models")
 namespace.configure(
     {
         "nautobot_bgp_models": {
-            "nautobot_ver": "1.3.8",
+            "nautobot_ver": "1.5.10",
             "project_name": "nautobot-bgp-models",
-            "python_ver": "3.8",
+            "python_ver": "3.9",
             "local": False,
             "compose_dir": os.path.join(os.path.dirname(__file__), "development"),
             "compose_files": ["docker-compose.requirements.yml", "docker-compose.base.yml", "docker-compose.dev.yml"],

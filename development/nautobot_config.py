@@ -56,7 +56,7 @@ DATABASES = {
     "default": {
         "NAME": os.getenv("POSTGRES_DB", "nautobot"),  # Database name
         "USER": os.getenv("POSTGRES_USER", ""),  # Database username
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", ""),  # Datbase password
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", ""),  # Database password
         "HOST": os.getenv("POSTGRES_HOST", "localhost"),  # Database server
         "PORT": os.getenv("POSTGRES_PORT", ""),  # Database port (leave blank for default)
         "CONN_MAX_AGE": os.getenv("POSTGRES_TIMEOUT", 300),  # Database timeout

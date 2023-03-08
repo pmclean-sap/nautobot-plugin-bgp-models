@@ -1,0 +1,1195 @@
+[
+    {
+        "model": "dcim.manufacturer",
+        "pk": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:31:37.896Z",
+            "_custom_field_data": {},
+            "name": "Arista",
+            "slug": "arista",
+            "description": ""
+        }
+    },
+    {
+        "model": "dcim.devicetype",
+        "pk": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:33:01.495Z",
+            "_custom_field_data": {},
+            "manufacturer": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+            "model": "7504R3",
+            "slug": "7504r3",
+            "part_number": "",
+            "u_height": 7,
+            "is_full_depth": true,
+            "subdevice_role": "",
+            "front_image": "",
+            "rear_image": "",
+            "comments": ""
+        }
+    },
+    {
+        "model": "dcim.devicerole",
+        "pk": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:33:26.696Z",
+            "_custom_field_data": {},
+            "name": "EVPN Spine",
+            "slug": "evpn-spine",
+            "color": "e91e63",
+            "vm_role": false,
+            "description": ""
+        }
+    },
+    {
+        "model": "dcim.device",
+        "pk": "6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:33:57.120Z",
+            "_custom_field_data": {},
+            "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+            "local_context_data": null,
+            "local_context_schema": null,
+            "local_context_data_owner_content_type": null,
+            "local_context_data_owner_object_id": null,
+            "device_type": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+            "device_role": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+            "tenant": null,
+            "platform": null,
+            "name": "Bob the Router",
+            "_name": "Bob the Router",
+            "serial": "5150",
+            "asset_tag": "I-5150",
+            "site": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+            "rack": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+            "position": 35,
+            "face": "front",
+            "primary_ip4": null,
+            "primary_ip6": null,
+            "cluster": null,
+            "virtual_chassis": null,
+            "vc_position": null,
+            "vc_priority": null,
+            "comments": "",
+            "secrets_group": null
+        }
+    },
+    {
+        "model": "dcim.rack",
+        "pk": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:31:02.903Z",
+            "_custom_field_data": {},
+            "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+            "name": "RACK001",
+            "_name": "RACK00000001",
+            "facility_id": null,
+            "site": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+            "group": null,
+            "tenant": null,
+            "role": null,
+            "serial": "",
+            "asset_tag": null,
+            "type": "",
+            "width": 19,
+            "u_height": 42,
+            "desc_units": false,
+            "outer_width": null,
+            "outer_depth": null,
+            "outer_unit": "",
+            "comments": ""
+        }
+    },
+    {
+        "model": "dcim.region",
+        "pk": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:29:28.055Z",
+            "_custom_field_data": {},
+            "parent": null,
+            "name": "IRL",
+            "slug": "irl",
+            "description": "Irish Test Labs",
+            "lft": 1,
+            "rght": 2,
+            "tree_id": 1,
+            "level": 0
+        }
+    },
+    {
+        "model": "dcim.site",
+        "pk": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:30:37.019Z",
+            "_custom_field_data": {},
+            "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+            "name": "MCP",
+            "_name": "MCP",
+            "slug": "mcp",
+            "region": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+            "tenant": null,
+            "facility": "O'Toole's Public House",
+            "asn": 65150,
+            "time_zone": "Europe/Dublin",
+            "description": "",
+            "physical_address": "Main Street\r\nAUGHRIM",
+            "shipping_address": "",
+            "latitude": null,
+            "longitude": null,
+            "contact_name": "",
+            "contact_phone": "",
+            "contact_email": "",
+            "comments": ""
+        }
+    },
+    {
+        "model": "ipam.ipaddress",
+        "pk": "f8e06570-5b19-459f-ae59-0dd5933def61",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T11:45:26.018Z",
+            "_custom_field_data": {},
+            "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+            "host": "2.1.1.1",
+            "broadcast": "2.1.1.255",
+            "prefix_length": 24,
+            "vrf": null,
+            "tenant": null,
+            "role": "",
+            "assigned_object_type": null,
+            "assigned_object_id": null,
+            "nat_inside": null,
+            "dns_name": "",
+            "description": "Router ID"
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "188ab75f-9778-4bc0-9671-59d9b8cc6210",
+        "fields": {
+            "time": "2023-03-08T11:30:37.042Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "643dc771-dc11-4993-949c-d6291aeaa907",
+            "action": "create",
+            "changed_object_type": 2,
+            "changed_object_id": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "MCP",
+            "object_data": {
+                "asn": 65150,
+                "name": "MCP",
+                "slug": "mcp",
+                "tags": [],
+                "region": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "tenant": null,
+                "created": "2023-03-08",
+                "comments": "",
+                "facility": "O'Toole's Public House",
+                "latitude": null,
+                "longitude": null,
+                "time_zone": "Europe/Dublin",
+                "description": "",
+                "contact_name": "",
+                "last_updated": "2023-03-08T11:30:37.019Z",
+                "contact_email": "",
+                "contact_phone": "",
+                "custom_fields": {},
+                "physical_address": "Main Street\r\nAUGHRIM",
+                "shipping_address": ""
+            },
+            "object_data_v2": {
+                "id": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+                "asn": 65150,
+                "url": "/api/dcim/sites/ad4ff57a-ef52-45d9-90a8-026c63a13d16/",
+                "name": "MCP",
+                "slug": "mcp",
+                "tags": [],
+                "region": {
+                    "id": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+                    "url": "/api/dcim/regions/64a88dc8-47f2-4192-8a49-eb163c2f80c0/",
+                    "name": "IRL",
+                    "slug": "irl",
+                    "_depth": 0,
+                    "display": "IRL"
+                },
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tenant": null,
+                "created": "2023-03-08",
+                "display": "MCP",
+                "comments": "",
+                "facility": "O'Toole's Public House",
+                "latitude": null,
+                "longitude": null,
+                "time_zone": "Europe/Dublin",
+                "description": "",
+                "contact_name": "",
+                "last_updated": "2023-03-08T11:30:37.019067Z",
+                "contact_email": "",
+                "contact_phone": "",
+                "custom_fields": {},
+                "physical_address": "Main Street\r\nAUGHRIM",
+                "shipping_address": ""
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "30e5af58-4af4-4a4e-95a3-8fce91da110e",
+        "fields": {
+            "time": "2023-03-08T11:31:37.909Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "fc38d1b8-adbb-40d1-99e8-97b13cdb5aa5",
+            "action": "create",
+            "changed_object_type": 50,
+            "changed_object_id": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "Arista",
+            "object_data": {
+                "name": "Arista",
+                "slug": "arista",
+                "created": "2023-03-08",
+                "description": "",
+                "last_updated": "2023-03-08T11:31:37.896Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+                "url": "/api/dcim/manufacturers/67b9c35a-6853-4dc0-9769-ae683534ef50/",
+                "name": "Arista",
+                "slug": "arista",
+                "created": "2023-03-08",
+                "display": "Arista",
+                "description": "",
+                "last_updated": "2023-03-08T11:31:37.896914Z",
+                "custom_fields": {}
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "3251c56d-c196-48b6-82e8-871fac39d164",
+        "fields": {
+            "time": "2023-03-08T11:43:37.575Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "6c4c0b63-33d3-4acd-8f2d-63099cd17fb6",
+            "action": "create",
+            "changed_object_type": 8,
+            "changed_object_id": "f8e06570-5b19-459f-ae59-0dd5933def61",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "2.1.1.1/24",
+            "object_data": {
+                "vrf": null,
+                "host": "2.1.1.1",
+                "role": "",
+                "tags": [],
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "tenant": null,
+                "created": "2023-03-08",
+                "dns_name": "",
+                "broadcast": "2.1.1.255",
+                "nat_inside": null,
+                "description": "Router ID",
+                "last_updated": "2023-03-08T11:43:37.544Z",
+                "custom_fields": {},
+                "prefix_length": 24,
+                "assigned_object_id": null,
+                "assigned_object_type": null
+            },
+            "object_data_v2": {
+                "id": "f8e06570-5b19-459f-ae59-0dd5933def61",
+                "url": "/api/ipam/ip-addresses/f8e06570-5b19-459f-ae59-0dd5933def61/",
+                "vrf": null,
+                "role": null,
+                "tags": [],
+                "family": {
+                    "label": "IPv4",
+                    "value": 4
+                },
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tenant": null,
+                "address": "2.1.1.1/24",
+                "created": "2023-03-08",
+                "display": "2.1.1.1/24",
+                "dns_name": "",
+                "nat_inside": null,
+                "description": "Router ID",
+                "nat_outside": [],
+                "last_updated": "2023-03-08T11:43:37.544003Z",
+                "custom_fields": {},
+                "assigned_object": null,
+                "assigned_object_id": null,
+                "assigned_object_type": null
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "336f43e4-707c-45f8-99ec-a44033f4bdc9",
+        "fields": {
+            "time": "2023-03-08T11:45:26.038Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "48159602-7719-4ff0-8da7-f779611a2289",
+            "action": "update",
+            "changed_object_type": 8,
+            "changed_object_id": "f8e06570-5b19-459f-ae59-0dd5933def61",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "2.1.1.1/24",
+            "object_data": {
+                "vrf": null,
+                "host": "2.1.1.1",
+                "role": "",
+                "tags": [],
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "tenant": null,
+                "created": "2023-03-08",
+                "dns_name": "",
+                "broadcast": "2.1.1.255",
+                "nat_inside": null,
+                "description": "Router ID",
+                "last_updated": "2023-03-08T11:45:26.018Z",
+                "custom_fields": {},
+                "prefix_length": 24,
+                "assigned_object_id": null,
+                "assigned_object_type": null
+            },
+            "object_data_v2": {
+                "id": "f8e06570-5b19-459f-ae59-0dd5933def61",
+                "url": "/api/ipam/ip-addresses/f8e06570-5b19-459f-ae59-0dd5933def61/",
+                "vrf": null,
+                "role": null,
+                "tags": [],
+                "family": {
+                    "label": "IPv4",
+                    "value": 4
+                },
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tenant": null,
+                "address": "2.1.1.1/24",
+                "created": "2023-03-08",
+                "display": "2.1.1.1/24",
+                "dns_name": "",
+                "nat_inside": null,
+                "description": "Router ID",
+                "nat_outside": [],
+                "last_updated": "2023-03-08T11:45:26.018409Z",
+                "custom_fields": {},
+                "assigned_object": null,
+                "assigned_object_id": null,
+                "assigned_object_type": null
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "5441ea19-6436-44da-b6cd-183172f4762a",
+        "fields": {
+            "time": "2023-03-08T11:34:26.731Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "8fbdf8e0-77ba-4cda-b55d-d4159c553db3",
+            "action": "create",
+            "changed_object_type": 111,
+            "changed_object_id": "dacf8cb4-13c2-44d4-906d-3805fd4e04f5",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "Bob the Router - AS 51520",
+            "object_data": {
+                "tags": [],
+                "device": "6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6",
+                "created": "2023-03-08",
+                "router_id": null,
+                "description": "",
+                "last_updated": "2023-03-08T11:34:26.710Z",
+                "custom_fields": {},
+                "extra_attributes": null,
+                "autonomous_system": "c0b30792-fcf2-4759-80ae-32b52791b60b"
+            },
+            "object_data_v2": {
+                "id": "dacf8cb4-13c2-44d4-906d-3805fd4e04f5",
+                "url": "/api/plugins/bgp/routing-instances/dacf8cb4-13c2-44d4-906d-3805fd4e04f5/",
+                "device": {
+                    "id": "6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6",
+                    "url": "/api/dcim/devices/6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6/",
+                    "name": "Bob the Router",
+                    "display": "Bob the Router"
+                },
+                "display": "Bob the Router - AS 51520",
+                "endpoints": [],
+                "router_id": null,
+                "description": "",
+                "autonomous_system": {
+                    "id": "c0b30792-fcf2-4759-80ae-32b52791b60b",
+                    "asn": 51520,
+                    "url": "/api/plugins/bgp/autonomous-systems/c0b30792-fcf2-4759-80ae-32b52791b60b/",
+                    "display": "AS 51520"
+                }
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "690c58ee-b021-4b39-93f3-22c172b3ad2b",
+        "fields": {
+            "time": "2023-03-08T10:21:37.362Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "d76d07ac-690f-4701-99c4-5c4456c0566d",
+            "action": "create",
+            "changed_object_type": 112,
+            "changed_object_id": "a28960ec-ed0c-461d-a7ae-8b27e921c3dd",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "fred",
+            "object_data": {
+                "name": "fred",
+                "slug": "fred",
+                "color": "9e9e9e",
+                "created": "2023-03-08",
+                "description": "",
+                "last_updated": "2023-03-08T10:21:37.355Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "a28960ec-ed0c-461d-a7ae-8b27e921c3dd",
+                "url": "/api/plugins/bgp/peering-roles/a28960ec-ed0c-461d-a7ae-8b27e921c3dd/",
+                "name": "fred",
+                "slug": "fred",
+                "color": "9e9e9e",
+                "display": "fred",
+                "description": ""
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "7609aa7e-d76a-42c0-9ceb-1b9ac4196455",
+        "fields": {
+            "time": "2023-03-08T10:21:21.330Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "faaf022b-d62d-4d27-b100-4b57584071e4",
+            "action": "create",
+            "changed_object_type": 110,
+            "changed_object_id": "c0b30792-fcf2-4759-80ae-32b52791b60b",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "AS 51520",
+            "object_data": {
+                "asn": 51520,
+                "tags": [],
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "created": "2023-03-08",
+                "provider": null,
+                "description": "",
+                "last_updated": "2023-03-08T10:21:21.297Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "c0b30792-fcf2-4759-80ae-32b52791b60b",
+                "asn": 51520,
+                "url": "/api/plugins/bgp/autonomous-systems/c0b30792-fcf2-4759-80ae-32b52791b60b/",
+                "tags": [],
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "display": "AS 51520",
+                "provider": null,
+                "description": ""
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "95000258-8937-47e8-aa5d-2d3a6c788381",
+        "fields": {
+            "time": "2023-03-08T11:31:02.923Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "7d89486b-9507-4dbb-9a19-72aede25278c",
+            "action": "create",
+            "changed_object_type": 3,
+            "changed_object_id": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "RACK001",
+            "object_data": {
+                "name": "RACK001",
+                "role": null,
+                "site": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+                "tags": [],
+                "type": "",
+                "group": null,
+                "width": 19,
+                "serial": "",
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "tenant": null,
+                "created": "2023-03-08",
+                "comments": "",
+                "u_height": 42,
+                "asset_tag": null,
+                "desc_units": false,
+                "outer_unit": "",
+                "facility_id": null,
+                "outer_depth": null,
+                "outer_width": null,
+                "last_updated": "2023-03-08T11:31:02.903Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+                "url": "/api/dcim/racks/1aed6df8-6c30-4061-ab87-f84a0aa988aa/",
+                "name": "RACK001",
+                "role": null,
+                "site": {
+                    "id": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+                    "url": "/api/dcim/sites/ad4ff57a-ef52-45d9-90a8-026c63a13d16/",
+                    "name": "MCP",
+                    "slug": "mcp",
+                    "display": "MCP"
+                },
+                "tags": [],
+                "type": null,
+                "group": null,
+                "width": {
+                    "label": "19 inches",
+                    "value": 19
+                },
+                "serial": "",
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tenant": null,
+                "created": "2023-03-08",
+                "display": "RACK001",
+                "comments": "",
+                "u_height": 42,
+                "asset_tag": null,
+                "desc_units": false,
+                "outer_unit": null,
+                "facility_id": null,
+                "outer_depth": null,
+                "outer_width": null,
+                "last_updated": "2023-03-08T11:31:02.903984Z",
+                "custom_fields": {}
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "a8c7f3a3-5b0a-4302-9bf5-03bf14f8acda",
+        "fields": {
+            "time": "2023-03-08T11:33:57.154Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "49c50357-a966-44a0-afa7-73c6477e23a5",
+            "action": "create",
+            "changed_object_type": 1,
+            "changed_object_id": "6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "Bob the Router",
+            "object_data": {
+                "face": "front",
+                "name": "Bob the Router",
+                "rack": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+                "site": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+                "tags": [],
+                "serial": "5150",
+                "status": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+                "tenant": null,
+                "cluster": null,
+                "created": "2023-03-08",
+                "comments": "",
+                "platform": null,
+                "position": 35,
+                "asset_tag": "I-5150",
+                "device_role": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+                "device_type": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+                "primary_ip4": null,
+                "primary_ip6": null,
+                "vc_position": null,
+                "vc_priority": null,
+                "last_updated": "2023-03-08T11:33:57.120Z",
+                "custom_fields": {},
+                "secrets_group": null,
+                "virtual_chassis": null,
+                "local_context_data": null,
+                "local_context_schema": null,
+                "local_context_data_owner_object_id": null,
+                "local_context_data_owner_content_type": null
+            },
+            "object_data_v2": {
+                "id": "6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6",
+                "url": "/api/dcim/devices/6eb69cda-0dc5-4f73-ae25-44a9d31ee7e6/",
+                "face": {
+                    "label": "Front",
+                    "value": "front"
+                },
+                "name": "Bob the Router",
+                "rack": {
+                    "id": "1aed6df8-6c30-4061-ab87-f84a0aa988aa",
+                    "url": "/api/dcim/racks/1aed6df8-6c30-4061-ab87-f84a0aa988aa/",
+                    "name": "RACK001",
+                    "display": "RACK001"
+                },
+                "site": {
+                    "id": "ad4ff57a-ef52-45d9-90a8-026c63a13d16",
+                    "url": "/api/dcim/sites/ad4ff57a-ef52-45d9-90a8-026c63a13d16/",
+                    "name": "MCP",
+                    "slug": "mcp",
+                    "display": "MCP"
+                },
+                "tags": [],
+                "serial": "5150",
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tenant": null,
+                "cluster": null,
+                "created": "2023-03-08",
+                "display": "Bob the Router",
+                "comments": "",
+                "platform": null,
+                "position": 35,
+                "asset_tag": "I-5150",
+                "primary_ip": null,
+                "device_role": {
+                    "id": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+                    "url": "/api/dcim/device-roles/77a77ad9-eed3-491f-bd48-1247edc31e8b/",
+                    "name": "EVPN Spine",
+                    "slug": "evpn-spine",
+                    "display": "EVPN Spine"
+                },
+                "device_type": {
+                    "id": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+                    "url": "/api/dcim/device-types/0df2e537-bbfc-4990-b4d5-7baa357b3f60/",
+                    "slug": "7504r3",
+                    "model": "7504R3",
+                    "display": "Arista 7504R3",
+                    "manufacturer": {
+                        "id": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+                        "url": "/api/dcim/manufacturers/67b9c35a-6853-4dc0-9769-ae683534ef50/",
+                        "name": "Arista",
+                        "slug": "arista",
+                        "display": "Arista"
+                    }
+                },
+                "primary_ip4": null,
+                "primary_ip6": null,
+                "vc_position": null,
+                "vc_priority": null,
+                "last_updated": "2023-03-08T11:33:57.120862Z",
+                "custom_fields": {},
+                "parent_device": null,
+                "secrets_group": null,
+                "virtual_chassis": null,
+                "local_context_data": null,
+                "local_context_schema": null
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "b9a83cb8-bee8-437a-9303-a0722c1e1c90",
+        "fields": {
+            "time": "2023-03-08T11:33:01.515Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "353d216a-e221-49ba-b788-1b331fd8b343",
+            "action": "create",
+            "changed_object_type": 44,
+            "changed_object_id": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "7504R3",
+            "object_data": {
+                "slug": "7504r3",
+                "tags": [],
+                "model": "7504R3",
+                "created": "2023-03-08",
+                "comments": "",
+                "u_height": 7,
+                "rear_image": "",
+                "front_image": "",
+                "part_number": "",
+                "last_updated": "2023-03-08T11:33:01.495Z",
+                "manufacturer": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+                "custom_fields": {},
+                "is_full_depth": true,
+                "subdevice_role": ""
+            },
+            "object_data_v2": {
+                "id": "0df2e537-bbfc-4990-b4d5-7baa357b3f60",
+                "url": "/api/dcim/device-types/0df2e537-bbfc-4990-b4d5-7baa357b3f60/",
+                "slug": "7504r3",
+                "tags": [],
+                "model": "7504R3",
+                "created": "2023-03-08",
+                "display": "Arista 7504R3",
+                "comments": "",
+                "u_height": 7,
+                "rear_image": null,
+                "front_image": null,
+                "part_number": "",
+                "last_updated": "2023-03-08T11:33:01.495328Z",
+                "manufacturer": {
+                    "id": "67b9c35a-6853-4dc0-9769-ae683534ef50",
+                    "url": "/api/dcim/manufacturers/67b9c35a-6853-4dc0-9769-ae683534ef50/",
+                    "name": "Arista",
+                    "slug": "arista",
+                    "display": "Arista"
+                },
+                "custom_fields": {},
+                "is_full_depth": true,
+                "subdevice_role": null
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "cd46702f-f910-42fd-a672-dc429a6de178",
+        "fields": {
+            "time": "2023-03-08T11:29:28.073Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "cbaf15fd-35b9-47ac-b69f-688b8ddcd383",
+            "action": "create",
+            "changed_object_type": 62,
+            "changed_object_id": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "IRL",
+            "object_data": {
+                "name": "IRL",
+                "slug": "irl",
+                "parent": null,
+                "created": "2023-03-08",
+                "description": "Irish Test Labs",
+                "last_updated": "2023-03-08T11:29:28.055Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "64a88dc8-47f2-4192-8a49-eb163c2f80c0",
+                "url": "/api/dcim/regions/64a88dc8-47f2-4192-8a49-eb163c2f80c0/",
+                "name": "IRL",
+                "slug": "irl",
+                "_depth": 0,
+                "parent": null,
+                "created": "2023-03-08",
+                "display": "IRL",
+                "description": "Irish Test Labs",
+                "last_updated": "2023-03-08T11:29:28.055060Z",
+                "custom_fields": {}
+            }
+        }
+    },
+    {
+        "model": "extras.objectchange",
+        "pk": "d8ef0829-a6cd-4029-baf7-1398fa2b0089",
+        "fields": {
+            "time": "2023-03-08T11:33:26.707Z",
+            "user": "b663139c-1905-42db-86a1-a27dfd8d7b67",
+            "user_name": "admin",
+            "request_id": "be4247b6-0f9d-422c-b58c-d0a2825f40b6",
+            "action": "create",
+            "changed_object_type": 43,
+            "changed_object_id": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+            "related_object_type": null,
+            "related_object_id": null,
+            "object_repr": "EVPN Spine",
+            "object_data": {
+                "name": "EVPN Spine",
+                "slug": "evpn-spine",
+                "color": "e91e63",
+                "created": "2023-03-08",
+                "vm_role": false,
+                "description": "",
+                "last_updated": "2023-03-08T11:33:26.696Z",
+                "custom_fields": {}
+            },
+            "object_data_v2": {
+                "id": "77a77ad9-eed3-491f-bd48-1247edc31e8b",
+                "url": "/api/dcim/device-roles/77a77ad9-eed3-491f-bd48-1247edc31e8b/",
+                "name": "EVPN Spine",
+                "slug": "evpn-spine",
+                "color": "e91e63",
+                "created": "2023-03-08",
+                "display": "EVPN Spine",
+                "vm_role": false,
+                "description": "",
+                "last_updated": "2023-03-08T11:33:26.696876Z",
+                "custom_fields": {}
+            }
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "116c9682-9814-4058-8eb6-22ec48007045",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.026Z",
+            "_custom_field_data": {},
+            "name": "Available",
+            "color": "4caf50",
+            "slug": "available",
+            "description": "Unit is available",
+            "content_types": [
+                3,
+                110
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "275777c0-27cd-4133-8490-ce00ad045c33",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.212Z",
+            "_custom_field_data": {},
+            "name": "Staged",
+            "color": "2196f3",
+            "slug": "staged",
+            "description": "Unit has been staged",
+            "content_types": [
+                1,
+                10
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "580db896-4fe2-428a-96f9-59e22db4f8ce",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.064Z",
+            "_custom_field_data": {},
+            "name": "Planned",
+            "color": "00bcd4",
+            "slug": "planned",
+            "description": "Unit has been planned",
+            "content_types": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                10,
+                110,
+                113
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "6161a9f9-abd0-4acf-9bde-2cadf4914ed1",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.044Z",
+            "_custom_field_data": {},
+            "name": "Decommissioned",
+            "color": "9e9e9e",
+            "slug": "decommissioned",
+            "description": "Circuit has been decommissioned",
+            "content_types": [
+                6,
+                113
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "654804ff-6d53-421a-a077-02fb46118d5d",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.050Z",
+            "_custom_field_data": {},
+            "name": "Deprovisioning",
+            "color": "ffc107",
+            "slug": "deprovisioning",
+            "description": "Circuit is being deprovisioned",
+            "content_types": [
+                6,
+                113
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "85b36cbc-f3d6-41c4-b8a3-2e9fd102fa9c",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.267Z",
+            "_custom_field_data": {},
+            "name": "Reserved",
+            "color": "ffc107",
+            "slug": "reserved",
+            "description": "Unit is reserved",
+            "content_types": [
+                3,
+                7,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "8cec6519-2f1d-4e7d-8dad-7c639f56f1cc",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.259Z",
+            "_custom_field_data": {},
+            "name": "Retired",
+            "color": "f44336",
+            "slug": "retired",
+            "description": "Site has been retired",
+            "content_types": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "9b1066df-d792-47a1-bd0f-915aea2a1591",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.432Z",
+            "_custom_field_data": {},
+            "name": "DHCP",
+            "color": "4caf50",
+            "slug": "dhcp",
+            "description": "Dynamically assigned IPv4/IPv6 address",
+            "content_types": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "a33ab960-8c49-45ed-8c04-43addfa0fa6f",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.058Z",
+            "_custom_field_data": {},
+            "name": "Offline",
+            "color": "ffc107",
+            "slug": "offline",
+            "description": "Unit is offline",
+            "content_types": [
+                1,
+                5,
+                6,
+                10,
+                113
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "aa58d058-20eb-47ec-9c3e-1c79b8314333",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.229Z",
+            "_custom_field_data": {},
+            "name": "Decommissioning",
+            "color": "ffc107",
+            "slug": "decommissioning",
+            "description": "Unit is being decommissioned",
+            "content_types": [
+                1,
+                2,
+                4,
+                10
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "ae0929e1-8949-45cf-a599-b695c5473be6",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.218Z",
+            "_custom_field_data": {},
+            "name": "Failed",
+            "color": "f44336",
+            "slug": "failed",
+            "description": "Unit has failed",
+            "content_types": [
+                1,
+                5,
+                10
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "b45b9aab-9a81-4590-91ee-e4f955c7e04f",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.380Z",
+            "_custom_field_data": {},
+            "name": "Container",
+            "color": "9e9e9e",
+            "slug": "container",
+            "description": "Network contains children",
+            "content_types": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "b7b33a35-2c61-4b09-96d6-ee0c92b7be14",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.243Z",
+            "_custom_field_data": {},
+            "name": "Staging",
+            "color": "2196f3",
+            "slug": "staging",
+            "description": "Site is in the process of being staged",
+            "content_types": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "b87961f7-e051-4f9d-880e-137de6ec9c66",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.291Z",
+            "_custom_field_data": {},
+            "name": "Deprecated",
+            "color": "f44336",
+            "slug": "deprecated",
+            "description": "Unit has been deprecated",
+            "content_types": [
+                3,
+                7,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "c3dfbc83-ed1a-4b10-87c0-89bc0b8309f9",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.224Z",
+            "_custom_field_data": {},
+            "name": "Inventory",
+            "color": "9e9e9e",
+            "slug": "inventory",
+            "description": "Device is in inventory",
+            "content_types": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "ce5babb1-eaa4-412c-a6e8-3b502612e335",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.070Z",
+            "_custom_field_data": {},
+            "name": "Provisioning",
+            "color": "2196f3",
+            "slug": "provisioning",
+            "description": "Circuit is being provisioned",
+            "content_types": [
+                6,
+                113
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "cf164ce2-488a-412a-a501-929d73777ac7",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.299Z",
+            "_custom_field_data": {},
+            "name": "Connected",
+            "color": "4caf50",
+            "slug": "connected",
+            "description": "Cable is connected",
+            "content_types": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "eaa2cbec-ecf9-4546-9223-ecf2d1a4a5a4",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:11.439Z",
+            "_custom_field_data": {},
+            "name": "SLAAC",
+            "color": "4caf50",
+            "slug": "slaac",
+            "description": "Dynamically assigned IPv6 address",
+            "content_types": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "extras.status",
+        "pk": "f4d4dbd5-ce2e-4fdd-8979-98fb18c63c14",
+        "fields": {
+            "created": "2023-03-08",
+            "last_updated": "2023-03-08T10:17:32.039Z",
+            "_custom_field_data": {},
+            "name": "Active",
+            "color": "4caf50",
+            "slug": "active",
+            "description": "Unit is active",
+            "content_types": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                110,
+                113
+            ]
+        }
+    }
+]
